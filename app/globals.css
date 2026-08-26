@@ -3,42 +3,16 @@
 @tailwind utilities;
 
 @layer base {
-  * {
-    @apply border-text-muted/20;
-  }
-
   html {
     @apply scroll-smooth;
   }
 
   body {
     @apply bg-background text-text-primary antialiased;
-    font-size: 16px;
-    line-height: 1.6;
   }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+  h1, h2, h3, h4, h5, h6 {
     @apply font-display font-bold;
-  }
-
-  input[type="text"],
-  input[type="email"],
-  textarea {
-    @apply border-0;
-  }
-
-  input[type="text"]:focus,
-  input[type="email"]:focus,
-  textarea:focus {
-    border: none !important;
-    outline: none !important;
-    box-shadow: none !important;
-    ring: 0 !important;
   }
 }
 
@@ -82,12 +56,6 @@
 ::selection {
   background-color: rgba(232, 93, 93, 0.3);
   color: #ffffff;
-}
-
-/* Focus visible */
-*:focus-visible {
-  outline: 2px solid #e85d5d;
-  outline-offset: 2px;
 }
 
 /* Reduced motion */

@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import ChatBox from "@/components/chat/ChatBox";
 
 export default function Hero() {
   return (
@@ -36,17 +35,13 @@ export default function Hero() {
               src="/images/avatar.png"
               alt="Nushant Ghimire"
               fill
+              sizes="(max-width: 768px) 160px, 192px"
               className="object-cover"
               priority
             />
           </div>
         </div>
       </motion.div>
-
-      {/* AI ChatBox */}
-      <div className="w-full px-4 mb-8">
-        <ChatBox />
-      </div>
 
       {/* Content - Centered */}
       <div className="max-w-4xl text-center px-4">
