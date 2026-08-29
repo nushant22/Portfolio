@@ -65,7 +65,7 @@ export default function Footer() {
 
         <div className="border-t border-text-muted/20 pt-6">
           <p className="text-text-muted text-sm text-center">
-            sketched on paper, built with code — © Nushant Ghimire
+            sketched on paper, built with code - © Nushant Ghimire
           </p>
         </div>
       </div>

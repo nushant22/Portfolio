@@ -4,13 +4,13 @@ import { motion } from "framer-motion";
 
 const experiences = [
   {
-    title: "Operations Associate — Himalayan Silicon Valley",
+    title: "Operations Associate - Himalayan Silicon Valley",
     period: "since February 2026",
     description:
-      "Lead and coordinate remote data-annotation teams across AI training-data projects — part project manager, part translator between \"the model needs cleaner labels\" and \"the team needs clearer instructions.\"",
+      "Lead and coordinate remote data-annotation teams across AI training-data projects - part project manager, part translator between \"the model needs cleaner labels\" and \"the team needs clearer instructions.\"",
   },
   {
-    title: "BSc CSIT — Patan Multiple Campus, Tribhuvan University",
+    title: "BSc CSIT - Patan Multiple Campus, Tribhuvan University",
     period: "final year",
     description:
       "Capstone: Swastha, a telemedicine platform built to handle the actual weight of Nepal's healthcare access problem, not just a class requirement.",

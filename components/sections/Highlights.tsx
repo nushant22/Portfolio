@@ -6,7 +6,7 @@ const highlights = [
   {
     title: "MatchHire",
     description:
-      "An AI-powered, Tinder-style mutual job-matching platform for candidates, recruiters, and admins — because job hunting deserved a swipe interface eventually.",
+      "An AI-powered, Tinder-style mutual job-matching platform for candidates, recruiters, and admins - because job hunting deserved a swipe interface eventually.",
     tags: ["NestJS", "Next.js", "FastAPI", "Prisma"],
     link: null,
     linkText: "MVP scaffold in progress · private repo",
@@ -14,7 +14,7 @@ const highlights = [
   {
     title: "Swastha",
     description:
-      "A multi-role telemedicine platform for the Nepal market — patients, doctors, and admins, with a disease-prediction ML service quietly doing the hard part.",
+      "A multi-role telemedicine platform for the Nepal market - patients, doctors, and admins, with a disease-prediction ML service quietly doing the hard part.",
     tags: ["React", "Node/Prisma", "WebRTC", "Python ML"],
     link: "https://github.com/nushant22",
     linkText: "view repo →",
