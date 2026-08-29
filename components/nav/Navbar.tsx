@@ -38,7 +38,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
         <div className="flex items-center justify-center h-16 relative">
           {/* Desktop Navigation - Centered with dark red background */}
-          <div className="hidden md:flex items-center gap-6 bg-[#8B0000] px-10 py-3 rounded-full">
+          <div className="hidden md:flex items-center gap-6 bg-[#610713] px-10 py-3 rounded-full">
             {navItems.map((item) => (
               <a
                 key={item.href}
