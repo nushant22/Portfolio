@@ -2,8 +2,21 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function Hero() {
+  const [copied, setCopied] = useState(false);
+  const terminalCommand = "npx nushantg";
+
+  const handleCopy = async () => {
+    try {
+      await navigator.clipboard.writeText(terminalCommand);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch (err) {
+      console.error("Failed to copy:", err);
+    }
+  };
   return (
     <section className="section-container min-h-screen flex flex-col items-center justify-center pt-24">
       {/* Avatar - Centered below navbar with circular text */}
@@ -43,6 +56,37 @@ export default function Hero() {
         </div>
       </motion.div>
 
+      {/* Terminal Section - Pill Shaped */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.3 }}
+        className="mb-12"
+      >
+        <div className="bg-[#0c1a2e] border-2 border-[#610713] px-8 py-4 rounded-full flex items-center gap-4 group hover:border-[#7a0e1a] transition-colors shadow-lg">
+          <span className="text-white font-mono text-sm md:text-base">
+            {terminalCommand}
+          </span>
+          <button
+            onClick={handleCopy}
+            className="text-white/70 hover:text-white transition-colors"
+            aria-label="Copy command"
+            title={copied ? "Copied!" : "Copy to clipboard"}
+          >
+            {copied ? (
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+              </svg>
+            ) : (
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z" />
+                <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z" />
+              </svg>
+            )}
+          </button>
+        </div>
+      </motion.div>
+
       {/* Content - Centered */}
       <div className="max-w-4xl text-center px-4">
         <motion.div
@@ -77,7 +121,7 @@ export default function Hero() {
           <p className="text-text-secondary leading-relaxed mb-6">
             I studied enough computer science to know that "it works on my machine" 
             is not a deployment strategy. On weekdays I coordinate remote data-annotation teams 
-            feeding AI training pipelines at Himalayan Silicon Valley. On weeknights I build things — 
+            feeding AI training pipelines at Himalayan Silicon Valley. On weeknights I build things - 
             job-matching apps, telemedicine platforms, trading bots that occasionally agree with the market. 
             This whole site started as ballpoint pen on a notebook page, which felt like the honest 
             way to build a portfolio for someone who mostly lives in a terminal.
