@@ -40,21 +40,21 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #0a0a0a;
+  background: #0c1a2e;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #666666;
+  background: #1a3a5c;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #e85d5d;
+  background: #610713;
 }
 
 /* Selection */
 ::selection {
-  background-color: rgba(232, 93, 93, 0.3);
+  background-color: rgba(97, 7, 19, 0.3);
   color: #ffffff;
 }
 

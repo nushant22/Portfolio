@@ -9,18 +9,18 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "#0a0a0a",
-        "background-light": "#1a1a1a",
-        "background-card": "#1e1e1e",
+        background: "#0c1a2e",
+        "background-light": "#132a45",
+        "background-card": "#1a3a5c",
         accent: {
-          DEFAULT: "#E85D5D",
-          light: "#FF6B6B",
-          dark: "#D94A4A",
+          DEFAULT: "#610713",
+          light: "#7a0e1a",
+          dark: "#4d0510",
         },
         text: {
           primary: "#ffffff",
-          secondary: "#a0a0a0",
-          muted: "#666666",
+          secondary: "#a0b4c8",
+          muted: "#6b7f95",
         },
       },
       fontFamily: {
