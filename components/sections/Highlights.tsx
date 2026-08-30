@@ -43,7 +43,7 @@ export default function Highlights() {
           {highlights.map((project, index) => (
             <motion.div
               key={project.title}
-              className="border border-text-muted/20 rounded-lg p-6 bg-background-card hover:border-text-muted/40 transition-colors"
+              className="border-2 border-[#610713] rounded-lg p-6 bg-[#610713] hover:border-[#7a0e1a] transition-colors"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}

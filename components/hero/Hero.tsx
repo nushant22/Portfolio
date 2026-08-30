@@ -26,7 +26,7 @@ export default function Hero() {
         transition={{ duration: 0.6 }}
         className="mb-8 relative"
       >
-        <div className="relative w-52 h-52 md:w-64 md:h-64">
+        <div className="relative w-44 h-44 md:w-52 md:h-52">
           {/* Circular Text - Outside and on top */}
           <svg className="absolute inset-0 w-full h-full" viewBox="0 0 200 200">
             <defs>
@@ -43,12 +43,12 @@ export default function Hero() {
           </svg>
           
           {/* Circular Avatar */}
-          <div className="absolute inset-0 m-auto w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-accent/30 shadow-xl">
+          <div className="absolute inset-0 m-auto w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-accent/30 shadow-xl">
             <Image
               src="/images/avatar.png"
               alt="Nushant Ghimire"
               fill
-              sizes="(max-width: 768px) 160px, 192px"
+              sizes="(max-width: 768px) 128px, 160px"
               className="object-cover"
               priority
             />
@@ -63,8 +63,8 @@ export default function Hero() {
         transition={{ duration: 0.6, delay: 0.3 }}
         className="mb-12"
       >
-        <div className="bg-black border-2 border-[#610713] px-8 py-4 rounded-full flex items-center gap-4 group hover:border-[#7a0e1a] transition-colors shadow-lg">
-          <span className="text-white font-mono text-sm md:text-base">
+        <div className="bg-black border-2 border-[#610713] px-6 py-3 rounded-full flex items-center gap-3 group hover:border-[#7a0e1a] transition-colors shadow-lg">
+          <span className="text-white font-mono text-xs md:text-sm">
             {terminalCommand}
           </span>
           <button
@@ -74,11 +74,11 @@ export default function Hero() {
             title={copied ? "Copied!" : "Copy to clipboard"}
           >
             {copied ? (
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
                 <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
               </svg>
             ) : (
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
                 <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z" />
                 <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z" />
               </svg>

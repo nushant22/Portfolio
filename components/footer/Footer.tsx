@@ -34,33 +34,38 @@ export default function Footer() {
     <footer className="border-t border-text-muted/20">
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-12">
         <motion.div
-          className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8"
+          className="flex justify-center mb-8"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          {footerLinks.map((section) => (
-            <div key={section.category}>
-              <h3 className="text-sm font-display font-bold text-text-muted uppercase tracking-wide mb-3">
-                {section.category}
-              </h3>
-              <ul className="space-y-2">
-                {section.links.map((link) => (
-                  <li key={link.label}>
-                    <a
-                      href={link.href}
-                      target={link.href.startsWith("http") ? "_blank" : undefined}
-                      rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                      className="text-text-secondary hover:text-accent transition-colors text-sm"
-                    >
-                      {link.label}
-                    </a>
-                  </li>
-                ))}
-              </ul>
+          {/* Red pill-shaped container like navbar */}
+          <div className="bg-[#610713] px-10 py-4 rounded-full">
+            <div className="flex flex-wrap items-center justify-center gap-8">
+              {footerLinks.map((section) => (
+                <div key={section.category} className="text-center">
+                  <h3 className="text-xs font-display font-bold text-white/60 uppercase tracking-wide mb-2">
+                    {section.category}
+                  </h3>
+                  <ul className="space-y-1">
+                    {section.links.map((link) => (
+                      <li key={link.label}>
+                        <a
+                          href={link.href}
+                          target={link.href.startsWith("http") ? "_blank" : undefined}
+                          rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                          className="text-white hover:text-white/80 transition-colors text-sm"
+                        >
+                          {link.label}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
             </div>
-          ))}
+          </div>
         </motion.div>
 
         <div className="border-t border-text-muted/20 pt-6">
