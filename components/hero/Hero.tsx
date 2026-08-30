@@ -63,7 +63,7 @@ export default function Hero() {
         transition={{ duration: 0.6, delay: 0.3 }}
         className="mb-12"
       >
-        <div className="bg-[#0c1a2e] border-2 border-[#610713] px-8 py-4 rounded-full flex items-center gap-4 group hover:border-[#7a0e1a] transition-colors shadow-lg">
+        <div className="bg-black border-2 border-[#610713] px-8 py-4 rounded-full flex items-center gap-4 group hover:border-[#7a0e1a] transition-colors shadow-lg">
           <span className="text-white font-mono text-sm md:text-base">
             {terminalCommand}
           </span>
@@ -107,8 +107,7 @@ export default function Hero() {
           </p>
 
           <p className="text-text-secondary mb-4 leading-relaxed">
-            Final-year CSIT student. Professional herder of remote annotation teams. 
-            Occasional shipper of side projects.
+            Final-year CSIT student. Occasional shipper of side projects.
           </p>
         </motion.div>
 
@@ -120,8 +119,7 @@ export default function Hero() {
         >
           <p className="text-text-secondary leading-relaxed mb-6">
             I studied enough computer science to know that "it works on my machine" 
-            is not a deployment strategy. On weekdays I coordinate remote data-annotation teams 
-            feeding AI training pipelines at Himalayan Silicon Valley. On weeknights I build things - 
+            is not a deployment strategy. On weeknights I build things - 
             job-matching apps, telemedicine platforms, trading bots that occasionally agree with the market. 
             This whole site started as ballpoint pen on a notebook page, which felt like the honest 
             way to build a portfolio for someone who mostly lives in a terminal.
