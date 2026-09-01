@@ -1,7 +1,7 @@
 # Dependencies
-portfolio/frontend/node_modules/
-portfolio/backend/__pycache__/
-portfolio/backend/**/__pycache__/
+frontend/node_modules/
+backend/__pycache__/
+backend/**/__pycache__/
 *.py[cod]
 *$py.class
 
@@ -9,14 +9,15 @@ portfolio/backend/**/__pycache__/
 .env
 .env.local
 .env*.local
-portfolio/frontend/.env.local
-portfolio/backend/.env
+frontend/.env.local
+backend/.env
 
 # Build outputs
-portfolio/frontend/.next/
-portfolio/frontend/out/
-portfolio/backend/build/
-portfolio/backend/dist/
+frontend/.next/
+frontend/out/
+frontend/next-env.d.ts
+backend/build/
+backend/dist/
 
 # Database
 *.db
@@ -24,9 +25,9 @@ portfolio/backend/dist/
 *.sqlite3
 
 # Python virtual environment
-portfolio/backend/venv/
-portfolio/backend/ENV/
-portfolio/backend/env/
+backend/venv/
+backend/ENV/
+backend/env/
 *.egg-info/
 
 # IDEs
@@ -56,5 +57,5 @@ temp/
 tmp/
 
 # Alembic
-portfolio/backend/alembic/versions/*.py
-!portfolio/backend/alembic/versions/__init__.py
+backend/alembic/versions/*.py
+!backend/alembic/versions/__init__.py
