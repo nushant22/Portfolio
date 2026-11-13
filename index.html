@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nushant Ghimire - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-pill">
+                <a href="#home" class="nav-link">
+                    <img src="images/avatar.png" alt="Home" class="nav-avatar">
+                </a>
+                <a href="#highlights" class="nav-link">projects</a>
+                <a href="#experience" class="nav-link">experience</a>
+                <a href="#contact" class="nav-link">contact</a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#home" class="mobile-nav-link">home</a>
+        <a href="#highlights" class="mobile-nav-link">projects</a>
+        <a href="#experience" class="mobile-nav-link">experience</a>
+        <a href="#contact" class="mobile-nav-link">contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <!-- Avatar with circular text -->
+            <div class="avatar-container">
+                <svg class="circular-text" viewBox="0 0 200 200">
+                    <defs>
+                        <path id="circlePath" d="M 100, 100 m -85, 0 a 85,85 0 0,1 170,0" />
+                    </defs>
+                    <text class="circular-text-path">
+                        <textPath href="#circlePath" startOffset="5%">
+                            NUSHANT GHIMIRE
+                        </textPath>
+                    </text>
+                </svg>
+                <div class="avatar-image">
+                    <img src="images/avatar.png" alt="Nushant Ghimire">
+                </div>
+            </div>
+
+            <!-- Hero Text -->
+            <div class="hero-text">
+                <p class="hero-subtitle">Final-year CSIT student. Occasional shipper of side projects.</p>
+                <p class="hero-description">
+                    I studied enough computer science to know that "it works on my machine" 
+                    is not a deployment strategy. On weeknights I build things - 
+                    job-matching apps, telemedicine platforms, trading bots that occasionally agree with the market. 
+                    This whole site started as ballpoint pen on a notebook page, which felt like the honest 
+                    way to build a portfolio for someone who mostly lives in a terminal.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlights Section -->
+    <section id="highlights" class="section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Highlights</h2>
+                <p class="section-subtitle">some cool (and slightly silly) things I've made</p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Swastha -->
+                <div class="project-card">
+                    <h3 class="project-title">Swastha</h3>
+                    <p class="project-description">
+                        Healthcare Management System - A telemedicine platform for the Nepal market with appointment booking, video consultations, prescriptions, and disease prediction using machine learning.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">WebRTC</span>
+                        <span class="tag">Python ML</span>
+                    </div>
+                    <a href="https://github.com/nushant22/Swastha" target="_blank" rel="noopener noreferrer" class="project-link">
+                        view repo →
+                    </a>
+                </div>
+
+                <!-- Linder -->
+                <div class="project-card">
+                    <h3 class="project-title">Linder</h3>
+                    <p class="project-description">
+                        Swipe Right on Your Dream Job — A modern job matching platform that brings the simplicity of dating apps to the hiring process. Features mutual matching, real-time chat, and AI-powered candidate-job scoring.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">NestJS</span>
+                        <span class="tag">React</span>
+                        <span class="tag">FastAPI</span>
+                        <span class="tag">Prisma</span>
+                        <span class="tag">Redis</span>
+                        <span class="tag">PostgreSQL</span>
+                    </div>
+                    <a href="https://github.com/nushant22/Linder" target="_blank" rel="noopener noreferrer" class="project-link">
+                        view repo →
+                    </a>
+                </div>
+
+                <!-- LLM from Scratch -->
+                <div class="project-card">
+                    <h3 class="project-title">LLM from Scratch</h3>
+                    <p class="project-description">
+                        Building Large Language Models from the ground up - implementing core concepts like attention mechanisms, tokenizers, embeddings, and transformers to understand how LLMs actually work under the hood.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">PyTorch</span>
+                        <span class="tag">Transformers</span>
+                        <span class="tag">NLP</span>
+                        <span class="tag">Machine Learning</span>
+                    </div>
+                    <a href="https://github.com/nushant22/LLM-from-scratch" target="_blank" rel="noopener noreferrer" class="project-link">
+                        view repo →
+                    </a>
+                </div>
+
+                <!-- FastAPI-REST-APIs -->
+                <div class="project-card">
+                    <h3 class="project-title">FastAPI-REST-APIs</h3>
+                    <p class="project-description">
+                        Modern REST API development with FastAPI showcasing CRUD operations, JWT authentication, database integration, WebSockets, and production-ready best practices. High-performance Python web APIs built for scale.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">FastAPI</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">JWT</span>
+                        <span class="tag">SQLAlchemy</span>
+                        <span class="tag">WebSockets</span>
+                    </div>
+                    <a href="https://github.com/nushant22/FastAPI-REST-APIs" target="_blank" rel="noopener noreferrer" class="project-link">
+                        view repo →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">My Experience</h2>
+            </div>
+
+            <div class="experience-list">
+                <div class="experience-item">
+                    <h3 class="experience-title">Operations Associate - Himalayan Silicon Valley</h3>
+                    <p class="experience-period">since February 2026</p>
+                    <p class="experience-description">
+                        Lead and coordinate remote data-annotation teams across AI training-data projects - part project manager, part translator between "the model needs cleaner labels" and "the team needs clearer instructions."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Skill Stack</h2>
+                <p class="section-subtitle">details, roughly grouped</p>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="skill-category-title">DEV</h3>
+                    <ul class="skill-list">
+                        <li><span class="bullet">•</span> Python</li>
+                        <li><span class="bullet">•</span> React</li>
+                        <li><span class="bullet">•</span> Node.js / NestJS</li>
+                        <li><span class="bullet">•</span> Next.js</li>
+                        <li><span class="bullet">•</span> PostgreSQL / Prisma</li>
+                        <li><span class="bullet">•</span> FastAPI</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-category-title">AI & DEVOPS</h3>
+                    <ul class="skill-list">
+                        <li><span class="bullet">•</span> TensorFlow</li>
+                        <li><span class="bullet">•</span> Deep Learning</li>
+                        <li><span class="bullet">•</span> Data Visualization</li>
+                        <li><span class="bullet">•</span> Agile / Scrum / Kanban</li>
+                        <li><span class="bullet">•</span> Kaizen</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="section-container">
+            <div class="contact-content">
+                <p class="contact-text">
+                    got a project, a job, or just a good argument about tabs vs. spaces?
+                </p>
+                <a href="mailto:nushantghimire22@gmail.com" class="contact-link">
+                    say hello →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-pill">
+                <div class="footer-section">
+                    <h3 class="footer-category">DEV</h3>
+                    <a href="https://github.com/nushant22" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-category">AI/ML</h3>
+                    <a href="#skills">Skill stack</a>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-category">EXT</h3>
+                    <a href="https://www.linkedin.com/in/nushantghimire22" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-category">BLOGS</h3>
+                    <a href="#">coming soon</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>sketched on paper, built with code - © Nushant Ghimire</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
