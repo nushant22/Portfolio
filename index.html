@@ -16,6 +16,7 @@
                 </a>
                 <a href="#highlights" class="nav-link">projects</a>
                 <a href="#experience" class="nav-link">experience</a>
+                <a href="#skills" class="nav-link">skills</a>
                 <a href="#contact" class="nav-link">contact</a>
             </div>
             
@@ -31,6 +32,7 @@
         <a href="#home" class="mobile-nav-link">home</a>
         <a href="#highlights" class="mobile-nav-link">projects</a>
         <a href="#experience" class="mobile-nav-link">experience</a>
+        <a href="#skills" class="mobile-nav-link">skills</a>
         <a href="#contact" class="mobile-nav-link">contact</a>
     </div>
 
@@ -58,10 +60,10 @@
             <div class="hero-text">
                 <p class="hero-subtitle">Final-year Computer Science student. Backend developer and API enthusiast.</p>
                 <p class="hero-description">
-                    Pursuing a BSc in Computer Science and Information Technology at Tribhuvan University. 
+                    BSc in Computer Science and Information Technology at Tribhuvan University (2022-2026). 
                     Interested in artificial intelligence and machine learning, with a strong focus on core backend 
                     development, including designing and building APIs. Currently working as an Operation Officer at 
-                    eSewa Ltd., integrating payment APIs and resolving technical challenges in production environments.
+                    eSewa Ltd., integrating payment APIs into merchant applications and resolving production issues.
                 </p>
             </div>
         </div>
@@ -71,16 +73,17 @@
     <section id="highlights" class="section">
         <div class="section-container">
             <div class="section-header">
-                <h2 class="section-title">Highlights</h2>
-                <p class="section-subtitle">some cool (and slightly silly) things I've made</p>
+                <h2 class="section-title">Projects</h2>
+                <p class="section-subtitle">Building scalable systems and solving real-world problems</p>
             </div>
 
             <div class="projects-grid">
                 <!-- Swastha -->
                 <div class="project-card">
                     <h3 class="project-title">Swastha</h3>
+                    <span style="color: #a0b4c8; font-size: 0.875rem; display: block; margin-bottom: 0.75rem;">Final Year Capstone Project | 2026</span>
                     <p class="project-description">
-                        Final Year Capstone Project - Multi-role telemedicine platform for patients, doctors, and admins designed for the Nepal market. Backend built with Node.js, Express, Prisma, and PostgreSQL. Frontend with React, Vite, and Tailwind CSS. Real-time features with Socket.IO and WebRTC, integrated Khalti and eSewa payments, and Python ML service for disease prediction.
+                        Multi-role telemedicine platform for patients, doctors, and admins designed for the Nepal market. Developed backend with Node.js, Express, Prisma, and PostgreSQL, and frontend with React, Vite, and Tailwind CSS. Implemented real-time features with Socket.IO and WebRTC, integrated Khalti and eSewa payments, and added Python ML service for disease prediction.
                     </p>
                     <div class="project-tags">
                         <span class="tag">Node.js</span>
@@ -89,6 +92,7 @@
                         <span class="tag">PostgreSQL</span>
                         <span class="tag">Prisma</span>
                         <span class="tag">WebRTC</span>
+                        <span class="tag">Socket.IO</span>
                         <span class="tag">Python ML</span>
                     </div>
                     <a href="https://github.com/nushant22/Swastha" target="_blank" rel="noopener noreferrer" class="project-link">
@@ -99,8 +103,9 @@
                 <!-- Linder -->
                 <div class="project-card">
                     <h3 class="project-title">Linder</h3>
+                    <span style="color: #a0b4c8; font-size: 0.875rem; display: block; margin-bottom: 0.75rem;">AI-Powered Job Matching Platform | Personal Project | 2026</span>
                     <p class="project-description">
-                        AI-Powered Job Matching Platform - Full-stack job matching platform where candidates and recruiters swipe, and a match forms when both swipe right. Backend with NestJS, TypeScript, PostgreSQL, Prisma, Redis, and BullMQ. JWT authentication with refresh token rotation, Argon2 password hashing, OTP verification. Race-condition-safe transactional matching with skills scoring algorithm. FastAPI embedding microservice using sentence-transformers deployed with Docker.
+                        Full-stack job matching platform where candidates and recruiters swipe, and a match forms when both swipe right. Developed backend with NestJS, TypeScript, PostgreSQL, Prisma, Redis, and BullMQ, with Swagger API docs. Implemented JWT authentication with refresh token rotation, Argon2 password hashing, OTP verification, and role-based access control. Designed race-condition-safe transactional matching and a skills, experience, and location scoring algorithm. Created FastAPI embedding microservice using sentence-transformers, deployed with Docker, and a React 19, Vite, and Tailwind CSS v4 frontend.
                     </p>
                     <div class="project-tags">
                         <span class="tag">NestJS</span>
@@ -108,7 +113,9 @@
                         <span class="tag">PostgreSQL</span>
                         <span class="tag">Prisma</span>
                         <span class="tag">Redis</span>
+                        <span class="tag">BullMQ</span>
                         <span class="tag">FastAPI</span>
+                        <span class="tag">React 19</span>
                         <span class="tag">Docker</span>
                     </div>
                     <a href="https://github.com/nushant22/Linder" target="_blank" rel="noopener noreferrer" class="project-link">
@@ -119,17 +126,19 @@
                 <!-- eSewa Reconciliation Engine -->
                 <div class="project-card">
                     <h3 class="project-title">eSewa Reconciliation Engine</h3>
+                    <span style="color: #a0b4c8; font-size: 0.875rem; display: block; margin-bottom: 0.75rem;">Personal Project | 2026</span>
                     <p class="project-description">
-                        Reconciliation tool that matches internal ledger against partner and bank statements using Python, Polars, and Streamlit. Sorts rows into exact, mismatch, and orphan buckets with conservation check. Handles Nepal-specific data: UTC to NPT date shifts, Bikram Sambat dates, NPR currency formats. Matches ~200,000 rows in 1.3 seconds with SQLite audit log and SHA-256 file hashes.
+                        Reconciliation tool that matches an internal ledger against partner and bank statements, using Python, Polars, and Streamlit. Sorted every row into exact, mismatch, and orphan buckets, with a conservation check that fails the run if any rows are lost. Handled Nepal-specific data issues: UTC to NPT date shifts, Bikram Sambat dates, NPR currency formats, and leading-zero loss. Matched about 200,000 rows against about 198,000 in 1.3 seconds, and exported CSV or Excel reports. Added SQLite audit log with SHA-256 file hashes, an airlines reconciliation module with a shared Postgres history, and pytest coverage.
                     </p>
                     <div class="project-tags">
                         <span class="tag">Python</span>
                         <span class="tag">Polars</span>
                         <span class="tag">Streamlit</span>
                         <span class="tag">SQLite</span>
+                        <span class="tag">PostgreSQL</span>
                         <span class="tag">pytest</span>
                     </div>
-                    <a href="https://github.com/nushant22/esewa-reconciliation" target="_blank" rel="noopener noreferrer" class="project-link">
+                    <a href="https://github.com/nushant22/esewa-reconciliation-engine" target="_blank" rel="noopener noreferrer" class="project-link">
                         view repo →
                     </a>
                 </div>
@@ -146,19 +155,31 @@
 
             <div class="experience-list">
                 <div class="experience-item">
-                    <h3 class="experience-title">Operation Officer (Service Integration and Issue Resolution) - eSewa Ltd.</h3>
+                    <h3 class="experience-title">Operation Officer (Service Integration and Issue Resolution)</h3>
+                    <p style="color: #a0b4c8; font-size: 0.95rem; margin-bottom: 0.25rem;">eSewa Ltd. | Pulchowk, Lalitpur</p>
                     <p class="experience-period">August 2026 – Present</p>
-                    <p class="experience-description">
-                        Integrate eSewa payment APIs into merchant web applications, handling request generation, secure data transmission, and response/callback handling. Build and customize payment forms, connect frontend to backend services via RESTful APIs. Resolve integration issues by debugging API errors, validating request signatures, and managing service configurations. Collaborate with product and backend teams to deploy new integrations with minimal downtime.
-                    </p>
+                    <ul style="list-style: disc; margin-left: 1.5rem; color: #a0b4c8; line-height: 1.7; margin-top: 0.75rem;">
+                        <li>Integrated eSewa payment APIs into merchant web applications, handling request generation, secure data transmission, and response/callback handling.</li>
+                        <li>Built and customized payment forms to merchant requirements, with proper data capture, validation, and a smooth payment flow.</li>
+                        <li>Connected frontend payment forms to backend services via RESTful APIs, ensuring accurate transaction initiation and verification.</li>
+                        <li>Implemented callback and redirect URL handling to process success, failure, and pending transactions and update system status.</li>
+                        <li>Resolved integration issues by debugging API errors, validating request signatures, and checking mismatched parameters.</li>
+                        <li>Maintained service configurations (merchant credentials, sandbox/production environments, API endpoints) and took part in unit, integration, and UAT testing for new payment features.</li>
+                        <li>Collaborated with product and backend teams to deploy new integrations with minimal downtime.</li>
+                    </ul>
                 </div>
 
                 <div class="experience-item">
-                    <h3 class="experience-title">Operations Associate - Himalayan Silicon Valley</h3>
+                    <h3 class="experience-title">Operations Associate</h3>
+                    <p style="color: #a0b4c8; font-size: 0.95rem; margin-bottom: 0.25rem;">Himalayan Silicon Valley</p>
                     <p class="experience-period">February 2026 – August 2026</p>
-                    <p class="experience-description">
-                        Led and coordinated remote teams of data annotators across multiple AI training-data projects. Managed workflows with Kanban in Notion and ClickUp, tracking progress and ensuring on-time delivery. Applied Kaizen principles to improve team efficiency. Led Autonomous Driving (Parking Slot Detection) with 10 annotators completing 1,000+ image annotations and Video Language Model Reasoning with 5 annotators completing 50+ video annotations.
-                    </p>
+                    <ul style="list-style: disc; margin-left: 1.5rem; color: #a0b4c8; line-height: 1.7; margin-top: 0.75rem;">
+                        <li>Led and coordinated remote teams of data annotators across multiple AI training-data projects.</li>
+                        <li>Managed workflows with Kanban in Notion and ClickUp, tracking progress and ensuring on-time delivery.</li>
+                        <li>Applied Kaizen principles to improve team efficiency and output quality.</li>
+                        <li><strong>Autonomous Driving (Parking Slot Detection):</strong> led 10 annotators to complete 1,000+ image annotations on schedule, maintaining high quality standards.</li>
+                        <li><strong>Video Language Model Reasoning:</strong> led 5 annotators to complete 50+ video annotation tasks on schedule, maintaining high quality standards.</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -187,34 +208,108 @@
                 <div class="skill-category">
                     <h3 class="skill-category-title">BACKEND</h3>
                     <ul class="skill-list">
-                        <li><span class="bullet">•</span> Node.js / Express.js</li>
+                        <li><span class="bullet">•</span> Node.js</li>
+                        <li><span class="bullet">•</span> Express.js</li>
                         <li><span class="bullet">•</span> NestJS</li>
                         <li><span class="bullet">•</span> FastAPI</li>
                         <li><span class="bullet">•</span> REST APIs</li>
-                        <li><span class="bullet">•</span> JWT Authentication</li>
-                        <li><span class="bullet">•</span> WebSockets / WebRTC</li>
+                        <li><span class="bullet">•</span> JWT authentication</li>
+                        <li><span class="bullet">•</span> WebSockets (Socket.IO)</li>
+                        <li><span class="bullet">•</span> WebRTC</li>
                     </ul>
                 </div>
 
                 <div class="skill-category">
-                    <h3 class="skill-category-title">DATABASES & TOOLS</h3>
+                    <h3 class="skill-category-title">FRONTEND</h3>
                     <ul class="skill-list">
-                        <li><span class="bullet">•</span> PostgreSQL / Prisma</li>
-                        <li><span class="bullet">•</span> Redis / SQLite</li>
-                        <li><span class="bullet">•</span> Git / GitHub</li>
-                        <li><span class="bullet">•</span> Docker</li>
-                        <li><span class="bullet">•</span> Postman / Swagger</li>
+                        <li><span class="bullet">•</span> React</li>
+                        <li><span class="bullet">•</span> Vite</li>
+                        <li><span class="bullet">•</span> Tailwind CSS</li>
                     </ul>
                 </div>
 
                 <div class="skill-category">
-                    <h3 class="skill-category-title">AI/ML & METHODOLOGIES</h3>
+                    <h3 class="skill-category-title">DATABASES & ORM</h3>
+                    <ul class="skill-list">
+                        <li><span class="bullet">•</span> PostgreSQL</li>
+                        <li><span class="bullet">•</span> Prisma</li>
+                        <li><span class="bullet">•</span> Redis</li>
+                        <li><span class="bullet">•</span> SQLite</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-category-title">AI/ML & DATA</h3>
                     <ul class="skill-list">
                         <li><span class="bullet">•</span> Polars</li>
                         <li><span class="bullet">•</span> sentence-transformers</li>
-                        <li><span class="bullet">•</span> TensorFlow</li>
-                        <li><span class="bullet">•</span> Agile / Scrum / Kanban</li>
+                        <li><span class="bullet">•</span> ML model serving with FastAPI</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-category-title">TOOLS & DEVOPS</h3>
+                    <ul class="skill-list">
+                        <li><span class="bullet">•</span> Git</li>
+                        <li><span class="bullet">•</span> GitHub</li>
+                        <li><span class="bullet">•</span> Docker</li>
+                        <li><span class="bullet">•</span> Postman</li>
+                        <li><span class="bullet">•</span> Swagger/OpenAPI</li>
+                        <li><span class="bullet">•</span> BullMQ</li>
+                        <li><span class="bullet">•</span> Streamlit</li>
+                        <li><span class="bullet">•</span> pytest</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-category-title">INTEGRATIONS & METHODOLOGIES</h3>
+                    <ul class="skill-list">
+                        <li><span class="bullet">•</span> eSewa and Khalti payment APIs</li>
+                        <li><span class="bullet">•</span> Agile</li>
+                        <li><span class="bullet">•</span> Scrum</li>
+                        <li><span class="bullet">•</span> Kanban</li>
                         <li><span class="bullet">•</span> Kaizen</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Education & Certifications</h2>
+            </div>
+
+            <div class="experience-list" style="max-width: 900px;">
+                <div class="experience-item">
+                    <h3 class="experience-title">Bachelor of Science in Computer Science and Information Technology (BSc. CSIT)</h3>
+                    <p style="color: #a0b4c8; font-size: 0.95rem; margin-bottom: 0.25rem;">Patan Multiple Campus, Tribhuvan University | Lalitpur, Nepal</p>
+                    <p class="experience-period">2022 – 2026 | 8th Semester (Final Year)</p>
+                </div>
+
+                <div class="experience-item">
+                    <h3 class="experience-title">High School</h3>
+                    <p style="color: #a0b4c8; font-size: 0.95rem; margin-bottom: 0.25rem;">Bluebird Secondary School | Lalitpur, Nepal</p>
+                    <p class="experience-period">2020 – 2022</p>
+                </div>
+
+                <div style="margin-top: 2rem;">
+                    <h3 style="font-size: 1.125rem; margin-bottom: 1rem; font-weight: 700;">Certifications</h3>
+                    <ul style="list-style: none; padding-left: 0;">
+                        <li style="color: #a0b4c8; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                            <span class="bullet" style="color: #610713;">•</span>
+                            Python for Data Science, Cognitive Class
+                        </li>
+                        <li style="color: #a0b4c8; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                            <span class="bullet" style="color: #610713;">•</span>
+                            Data Visualization with Python, Cognitive Class
+                        </li>
+                        <li style="color: #a0b4c8; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                            <span class="bullet" style="color: #610713;">•</span>
+                            Deep Learning with TensorFlow, Cognitive Class (2025)
+                        </li>
                     </ul>
                 </div>
             </div>
